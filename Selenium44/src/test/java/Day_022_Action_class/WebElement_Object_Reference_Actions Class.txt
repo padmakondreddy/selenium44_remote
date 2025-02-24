@@ -1,0 +1,34 @@
+
+double click
+right click
+mouse over on menu and sub menus
+drag and drop
+We have to create WebElement Object Reference 
+
+To handle Menu>Sub Menu , We will use actions class
+
+WebElement Hello_Signin=findElement(By.xpath("//span[text()='Hello, sign in']"));
+WebElement Your_Account=findElement(By.xpath("//span[text()='Your Account']"));
+		
+Actions actions=new Actions(driver);
+		
+actions.moveToElement(Hello_Signin).moveToElement(Your_Account).
+click().build().perform();
+
+----------------------------------------------------------------------------
+
+WebElement Copy_Text_Button=findElement(By.xpath("//*[@id='HTML10']/div[1]/button"));
+Actions actions = new Actions(driver);	
+actions.doubleClick(Copy_Text_Button).perform();
+
+----------------------------------------------------------------------------
+WebElement RButton=findElement(By.xpath("//span[text()='right click me']"));
+Actions actions = new Actions(driver);
+actions.contextClick(RButton).perform();
+-----------------------------------------------------------------------
+WebElement Source_Drag_Button=findElement(By.xpath("//*[@id='draggable']"));
+WebElement Target_Drop_Button=findElement(By.xpath("//*[@id='droppable']"));
+
+Actions actions = new Actions(driver);
+actions.dragAndDrop(Source_Drag_Button, Target_Drop_Button).perform();
+------------------------------------------------------------------------------

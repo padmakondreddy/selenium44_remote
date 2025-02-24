@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+  <test  name="Test">
+	  
+	 <parameter name="Browser1" value="Edge"/>
+     <parameter name="Testurl1" value="https://opensource-demo.orangehrmlive.com/"/>
+     <parameter name="username1" value="Admin"/>
+     <parameter name="password1" value="admin123"/>
+     <parameter name="skillname1" value="java9"/>
+     <parameter name="skilldesc1" value="java9desc"/>
+	  
+	  
+	  
+    <classes>
+      <class name="BrowserCompat.TC01_Add_Skills"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

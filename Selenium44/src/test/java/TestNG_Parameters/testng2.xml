@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+  <test thread-count="5" name="Test1">
+  <parameter name="Browser" value="Chrome"/> 
+  <parameter name="UserName" value="Admin"/> 
+  <parameter name="Password" value="admin123"/> 
+  <parameter name="SkillName" value="Java14"/> 
+  <parameter name="SkillDescr" value="Java14 descr"/> 
+    <classes>
+      <class name="TestNG_Parameters.TC01_Add_Skills"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test2">
+  <parameter name="Browser" value="Edge"/> 
+  <parameter name="UserName" value="Admin"/> 
+  <parameter name="Password" value="admin123"/> 
+  <parameter name="SkillName" value="Java15"/> 
+  <parameter name="SkillDescr" value="Java15 descr"/> 
+    <classes>
+      <class name="TestNG_Parameters.TC01_Add_Skills"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+  
+</suite> <!-- Suite -->

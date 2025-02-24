@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Failed suite [Suite110]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="Parallel_Classes.TC01_Add_Skills3">
+        <methods>
+          <include name="SkilsTest"/>
+        </methods>
+      </class> <!-- Parallel_Classes.TC01_Add_Skills3 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite110] -->

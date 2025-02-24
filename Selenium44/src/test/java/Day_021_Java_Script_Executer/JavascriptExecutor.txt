@@ -1,0 +1,20 @@
+
+sendKeys
+Scrolling at particular webelement
+click
+
+
+
+//findElement(By.id("twotabsearchtextbox")).sendKeys("Mobiles");
+	
+		WebElement searchInput=findElement(By.id("twotabsearchtextbox"));
+		JavascriptExecutor js = (JavascriptExecutor)driver;	
+		js.executeScript("arguments[0].setAttribute('value','Mobiles')", searchInput);
+		js.executeScript("arguments[0].value='Mobiles';", searchInput);
+		
+		
+	     	WebElement searchbutton=findElement(By.id("nav-search-submit-button"));
+	    	js.executeScript("arguments[0].click();", searchbutton);
+
+		WebElement Canadalink=findElement(By.xpath("//a[text()='Canada']"));
+		js.executeScript("arguments[0].scrollIntoView();", Canadalink);
